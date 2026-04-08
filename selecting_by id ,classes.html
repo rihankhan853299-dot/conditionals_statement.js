@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    padding: 20px;
+    margin: 10px;
+    width: 70px;
+    border: 4px solid greenyellow;
+}
+.boxe{
+    padding: 20px;
+    margin: 10px;
+    width: 70px;
+    border: 4px solid greenyellow;
+}
+</style>
+<body>
+    <div id="div" class="box">box1</div>
+    <div id="good" class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    <h1 id="guddu">kaleen bhaiyya</h1>
+
+    <div class="loop">
+
+        <div class="boxe"> box is 1</div>
+        <div class="boxe">box is 2</div>
+        <div class="boxe">box is 3</div>
+        <div class="boxe">box is 4</div>
+    </div>
+</body>
+<script>
+// ID selector
+let change=document.getElementById("div")
+change.style.backgroundColor="yellow"
+change.style.color="red"
+// change.style.marginTop="300px" ye bhi workable h
+
+// queryselector
+let r=
+document.querySelector("#good")
+r.style.color="blue";
+
+//inner.text
+// ----> inner.text ki help se hum text ko change kar sakte h
+let pandit= document.getElementById("guddu");
+pandit.innerText="guddu pandit";// ab text guddu pandit ho jayega
+
+// real use
+// ???
+
+// use of loop in JS
+document.querySelectorAll(".boxe").forEach(e=>{
+e.style.backgroundColor="green";
+})
+
+
+</script>
+</html>
