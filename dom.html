@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 class="change">hello sir G how are you</h1>
+
+    <p id="bg">my name is rihan khan and ui am friom village sakla</p>
+  </body>
+  <script >
+
+// javaScript mein DOM ek Aisa System jiski help se hum HTML page ko Access kar sakte h 
+//  DOM ki help se hum html ko or html ke kisi element ko controll kar sakte h(id ki help se ya class ki help se)
+
+let title =
+document.getElementsByClassName("change") 
+
+title[0].innerText="hello brother";
+// ab text badal kar  hello brother ho jayega.
+// 0 ka matlab h ki html page ke andar pahla vala element do
+
+
+let changebg=
+document.getElementById("bg");
+changebg.style.color="green";
+// bg naam ki id ka color green ho jayega
+
+
+// iss javascript ke code mein javascript Browser ke DOM(browser) se kah rahi ki html page ke andar heading class naam ke element ko mujhe de do Q ki mujhe iss element mei kuchh element mein kuchh changes karne h ya iss element ka controll mujhe chahiye(js kah rahi h iss baat ko)
+
+// -----> heading class naam ke element ka Access ab javascript ne heading naam ke variable ke andar aa chuka h ab hum iss  mein jo chahe vo kar sakte text ka contyect change kar sakte h color change kar sakte h
+
+  </script>
+</html>
