@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+</body>
+<script>
+/* 
+
+*/
+    let prom1=new Promise((resolove,reject)=>{  // New Promise---> ek promise or object banao jiss mein future mei milne vala result aayega aur ye result resolve(sahi) aur reject(galat) dependent hoga.
+    setTimeout(()=>{
+        console.log("yes i am done")
+        resolove("data mila") // value of a
+    },4000)
+    })
+    prom1.then((a)=>{
+        console.log(a);
+    })
+</script>
+</html>
