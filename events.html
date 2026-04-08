@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">hery i am rihan ladla</div>
+    </div>
+    <button id="btn">click now</button>
+
+    <button id="abdullah">doubleclick  EVEnt for abdullah</button>
+
+    <h3 id="over">mouseover apply in h3 heading</h3>
+
+    <!-- input events  -->
+
+    <input type="text" name="frsname" id="inp" placeholder="enter the first Name">
+
+    <!-- keboard events-->
+
+<!-- 1..keyup -->
+
+<input type="text" id="inp" placeholder="enter for keyup event">
+</body>
+<script>
+
+/* 
+what is event 
+event vo hota h jab use kisi cheej ko trigger(click) karen to response mile matlab kuchh nayi activity ho
+
+*/ 
+
+/* MOUSE EVENTS*/
+
+// 1...Click Event
+
+let button= document.getElementById("btn")
+// btn id vale element ka Access button variable ke andar aa gaya h
+button.addEventListener("click",()=>{
+    // here click is a event
+    alert("i am clicked");
+}
+)
+// 2..dblclick Event
+let abdullah= document.getElementById("abdullah")
+abdullah.addEventListener("dblclick",()=>{
+
+alert("abdullah");
+abdullah.innerHTML="my name is abdullah";
+});
+
+// 3..mouseover
+let mouse= document.getElementById("over");
+
+mouse.addEventListener("mouseover",()=>{
+
+    mouse.style.color="green"; // mose ferne par color green hoga
+}
+);
+mouse.addEventListener("mouseout",()=>{
+
+    mouse.style.color="red"; // mouse hatane par color red ho jayega
+});
+// input Events
+
+let input=document.getElementById("inp");
+input.addEventListener("input",()=>{
+    console.log(inp.value);
+})
+// change event
+// keyboard Event
+
+// 1..keyup 
+inp.addEventListener("keydown",(e)=>{
+    console.log("typing",e.key);
+}
+)
+
+// events ke baare mei bahut details mei aour padho
+</script>
+</html>
