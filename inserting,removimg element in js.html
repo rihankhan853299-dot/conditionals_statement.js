@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inserting and removing element </title>
+</head>
+<body>
+    <div class="container">
+
+        <div  style="display: rgb(8, 114, 13);"> hey i am a box</div>
+
+    </div>
+</body>
+<script>
+document.querySelector(".container").removeAttribute("style");
+
+// V VIMP
+// html k andar element creeate karna js ke through
+
+let div=document.createElement("div"); // ek naya element create kar do div naam ka
+div.innerHTML="guddu pandit" // element ke andar ka content jo display hoga
+div.setAttribute("class", "created"); // div ke andar created naam ki class bhi add kar do.
+document.querySelector(".container").after(div)  // real html page ke anadr container naam ki jo class h usi andar create karna div ko(new element ko(div) ko container ke andar daal do)
+
+// v vip Notes
+/* 
+1..Append is function  
+work 
+New ceated hue element ko bilkul last  mein add karta h
+
+2...before is a function
+work
+New created hue element ko shuru mein add karta h(hey i am ke just pahle)
+
+3.. after
+work
+New created hue element ko baad mein add karta h(hey i am ke just baad mein)
+*/
+
+// element create karne ka doosra tareeka 
+
+let cont = document.querySelector(".container")
+cont.insertAdjacentHTML("afterend","<b> my name is rihan khan</br>")
+
+/* 
+1.. afterend
+
+work
+New created element ke baad mein add karta h(hey i am box ke just baad mei)
+
+2..afterbeing
+
+work
+New created element ke pahal mein add karta h(hey i am box ke just pahle)
+
+3...beforeend?
+
+4..afterbeing?
+*/
+
+// v vimp
+// class list access karne ka tareeka by JS
+document.querySelector(".container").classList // or className
+
+// vv imp
+
+// class list mei New class Add karne ka tareeka
+
+document.querySelector(".container").classList.add("faizan")// container ke faizan Naam ki class Add ho jayegi
+
+// class remove kaerne ka tareeka
+
+document.querySelector(".container").classList.remove("faizan")// faizan naam ki class remove ho jayegi
+
+// togel method 
+// agar class lagi h to hut jayegi aur nhi lagi h to lag jayegi
+
+document.querySelector(".container").classList.toggle("abdullah")// agar abdullah naam ki class h to hata do agar nhi  h to add kar do(iss case mein nhi h isilioye add ho jayegi)
+</script>
+</html>
